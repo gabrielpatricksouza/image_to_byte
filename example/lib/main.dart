@@ -34,7 +34,8 @@ class _MyHomePageState extends State<MyHomePage> {
   Uint8List? image;
 
   void _imageToByte() async {
-    Uint8List iByte = await imageToByte('https://scaffoldtecnologia.com.br/wp-content/uploads/2021/11/i257652.jpeg');
+    Uint8List iByte = await imageToByte(
+        'https://scaffoldtecnologia.com.br/wp-content/uploads/2021/11/i257652.jpeg');
     setState(() => image = iByte);
   }
 
@@ -53,9 +54,11 @@ class _MyHomePageState extends State<MyHomePage> {
               'Click button to convert',
               style: Theme.of(context).textTheme.headline4,
             ),
-
-            Image.network('https://scaffoldtecnologia.com.br/wp-content/uploads/2021/11/i257652.jpeg'),
-            const SizedBox(height: 10.0,),
+            Image.network(
+                'https://scaffoldtecnologia.com.br/wp-content/uploads/2021/11/i257652.jpeg'),
+            const SizedBox(
+              height: 10.0,
+            ),
             Expanded(
               child: SingleChildScrollView(
                 child: Padding(
